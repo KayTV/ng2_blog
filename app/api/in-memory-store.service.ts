@@ -4,33 +4,32 @@ export class InMemoryStoreService {
     let posts = [
       {
         'id': 1,
-        'name': 'Bones',
-        'description': '',
-        'showtime': ''
+        'name': 'Angular 2 Quickstart',
+        'description': 'Quick setup for angular 2 using a dist folder to seperate ts from map.js and .js files'
       },
       {
         'id': 2,
-        'name': 'Criminal Minds',
-        'description': '',
-        'showtime': 'usually night time, sometimes all day marathons'
+        'name': 'Angular 2 Routing',
+        'description': 'Routing for angular 2 using multiple routing files'
       },
       {
         'id': 3,
-        'name': 'NCIS',
-        'description': '',
-        'showtime': ''
+        'name': 'Angular 2 Http Calls',
+        'description': 'Basic CRUD app set up for Http Calls'
       }
     ];
-    let research = [
+    let comments = [
       {
         'id': 1,
-        'name': ''
+        'name': '',
+        'comment': ''
       },
       {
         'id': 2,
-        'name': ''
+        'name': '',
+        'comment': ''
       }
     ]
-    return { posts, research };
+    return { posts, comments };
   }
 }
