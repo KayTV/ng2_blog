@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PostsService } from '../../services/posts.service';
-import { Post } from '../../models/posts';
+import { PostService } from '../../services/post.service';
+import { Post } from '../../models/post';
 
 @Component({
   selector: 'homepage',
@@ -9,11 +9,11 @@ import { Post } from '../../models/posts';
   styleUrls: ['app/styles/homepage.css']
 })
 
-export class HomepageComponent {
+export class HomepageComponent implements OnInit {
   posts: Post[];
   error: string;
 
-  constructor (private postService: PostsService) {}
+  constructor (private postService: PostService) {}
 
   getPosts() {
     this.postService.getPosts().subscribe(
